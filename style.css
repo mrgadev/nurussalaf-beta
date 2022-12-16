@@ -19,14 +19,14 @@ a {
 /* MAIN SECTION */
 
 header {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     padding: 30px 5%;
 }
 
 .judul-situs {
-
+    float: left;
     font-weight: 700;
     font-size: 20px;
     color: #1A629C;
@@ -38,7 +38,8 @@ header {
 }
 
 .tanggal-hijriah {
-    grid-auto-columns: 1fr;
+    float: right;
+    margin-left: 1rem;
     font-weight: 600;
     font-size: 20px;
     color: #1A629C;
@@ -52,10 +53,12 @@ nav .dark-mode {
     padding-right: 15px;
 }
 
+
+
 main {
     display: flex;
     flex-direction: column;
-    padding: 10rem 0 12rem 0;
+    padding: 10% 0 14% 0;
     /* padding-bottom: 10rem; */
     align-items: center;
     justify-content: center;
@@ -125,6 +128,28 @@ main {
     height: 40px;
     background-color: #1A629C;
 }
+
+/* Style untuk menu bahasa */
+/* .pilih-bahasa {
+    display: inline-block;
+} */
+main .bahasa-penelusuran {
+    padding-top: 2rem;
+    font-weight: 500;
+}
+
+main .bahasa-penelusuran a {
+    color: #1A629C;
+    padding: 1em ;
+    border-radius: 10px;
+}
+
+main .bahasa-penelusuran a:hover {
+    border-radius: 50px;
+    background-image: linear-gradient(90deg, #3DBFA1, #2D939F, #1A629C);
+    color: #fff;
+    transition: all 0.5s ease;
+}
   
 /* Footer */
 footer {
@@ -159,3 +184,113 @@ footer .copyright {
     font-weight: 600;
 }
   /* margin-right: -3.2rem; */
+
+
+/* Responsive Breakpoint */ 
+@media screen and (max-width: 512px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .judul-situs, .judul-situs sup {
+        flex: 1;
+        order: 1;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .tanggal-hijriah {
+        flex: 1;
+        order: 2;
+        font-size: 17px;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 10% 0 14% 0;
+        /* padding-bottom: 10rem; */
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .apa-yang-baru {
+        padding-bottom: 15px;
+        color: #2D939F ;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .search-bar {
+        width: 450px;
+        height: 60px;
+        background-color: #fff;
+        border: 1px solid #1A629C;
+        display: flex;
+        align-items: center;
+        border-radius: 60px;
+        padding: 10px 20px;
+    }
+    /* Style untuk menu bahasa */
+    /* .pilih-bahasa {
+        display: inline-block;
+    } */
+    main .bahasa-penelusuran {
+        padding-top: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    main .bahasa-penelusuran a {
+        color: #1A629C;
+        padding: 1em ;
+        border-radius: 10px;
+    }
+    
+    main .bahasa-penelusuran a:hover {
+        border-radius: 50px;
+        background-image: linear-gradient(90deg, #3DBFA1, #2D939F, #1A629C);
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+      
+    /* Footer */
+    footer {
+        /* background-color: #1A629C; */
+        padding: 1rem 4rem;
+        font-weight: 500;
+    }
+    
+    footer .footer-menu {
+        float: left;
+    }
+    
+    footer .footer-menu ul li {
+        padding: 0 0.5em;
+    }
+    
+    footer .footer-menu ul li a {
+        color: #2D939F;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    footer .footer-menu ul li a:hover {
+        color: #fff;
+        background-image: linear-gradient(90deg, #3DBFA1, #2D939F, #1A629C);
+        border-radius: 50px;
+        transition: all 0.4s ease;
+    }
+    footer .copyright {
+        float: right;
+        color: #1A629C;
+        font-weight: 600;
+    }
+      /* margin-right: -3.2rem; */
+    
+}
