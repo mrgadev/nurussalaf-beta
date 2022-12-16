@@ -98,13 +98,13 @@ header {
 }
   
 main {
-    padding: 1em 3em;
+    padding: 1em;
 }
 
 /* Footer */
 footer {
     /* background-color: #1A629C; */
-    padding: 2.5rem 4rem;
+    padding: 1rem 4rem;
     font-weight: 500;
 }
 
