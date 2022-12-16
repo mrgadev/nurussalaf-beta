@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* Generic Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MAIN SECTION */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+.judul-situs {
+
+    font-weight: 700;
+    font-size: 20px;
+    color: #1A629C;
+}
+
+.judul-situs sup {
+    padding-left: 5px;
+    color: #2D939F;
+}
+
+
+.search-bar {
+    width: 750px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #1A629C;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.search-input {
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 17px;
+    color: #1A629C;
+    margin-right: -3rem;
+}
+
+::placeholder {
+    color: #1A629C;
+}
+
+.search-bar button {
+    cursor: pointer;
+}
+
+.search-bar button span {
+    width: 25px;
+}
+
+.search-bar .voice-search {
+    border: 0;
+    outline: none;
+    border-radius: 40px;
+    margin-right: 8px;
+    width: 62px;
+    height: 40px;
+    background-color: #3DBFA1;
+}
+
+.search-bar span {
+    color: #fff;
+}
+
+.search-bar .search-button {
+    border: 0;
+    outline: none;
+    /* margin-right: 55px; */
+    margin-right: -10px;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #1A629C;
+}
+  
+main {
+    padding: 1em;
+}
+
+/* Footer */
+footer {
+    /* background-color: #1A629C; */
+    padding: 1rem 4rem;
+    font-weight: 500;
+}
+
+footer .footer-menu {
+    float: left;
+}
+
+footer .footer-menu ul li {
+    padding: 0 0.5em;
+}
+
+footer .footer-menu ul li a {
+    color: #2D939F;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+footer .footer-menu ul li a:hover {
+    color: #fff;
+    background-image: linear-gradient(90deg, #3DBFA1, #2D939F, #1A629C);
+    border-radius: 50px;
+    transition: all 0.4s ease;
+}
+footer .copyright {
+    float: right;
+    color: #1A629C;
+    font-weight: 600;
+}
+  /* margin-right: -3.2rem; */
