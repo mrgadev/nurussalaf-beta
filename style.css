@@ -37,22 +37,31 @@ header {
     color: #2D939F;
 }
 
-.tanggal-hijriah {
+.pilih-bahasa ul {
     float: right;
-    margin-left: 1rem;
-    font-weight: 600;
-    font-size: 20px;
+    /* height: 80px; */
+    margin-right: -1.2rem;
+    font-weight: 500;
+    font-size: 17px;
     color: #1A629C;
 }
 
-nav .material-symbols-outlined {
-    size: 20px;
-    color: #1A629C;
-}
-nav .dark-mode {
-    padding-right: 15px;
+.pilih-bahasa ul li {
+    margin: 0 5px;
 }
 
+
+.pilih-bahasa ul li a {
+    color: #1A629C;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+.pilih-bahasa ul li a.active, .pilih-bahasa ul li a:hover {
+    background-color: rgba(61, 191, 161, 0.1);
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
 
 
 main {
@@ -64,10 +73,11 @@ main {
     justify-content: center;
 }
 
-.apa-yang-baru {
+.tanggal-hijriah {
     padding-bottom: 20px;
     color: #2D939F ;
     font-weight: 500;
+    font-size: 17px;
 }
 
 .search-bar {
@@ -129,26 +139,16 @@ main {
     background-color: #1A629C;
 }
 
-/* Style untuk menu bahasa */
-/* .pilih-bahasa {
-    display: inline-block;
-} */
-main .bahasa-penelusuran {
-    padding-top: 2rem;
+.ramadhan-countdown {
+    padding-top: 20px;
     font-weight: 500;
+    font-size: 17px;
+    color: #2D939F;
 }
 
-main .bahasa-penelusuran a {
-    color: #1A629C;
-    padding: 1em ;
-    border-radius: 10px;
-}
-
-main .bahasa-penelusuran a:hover {
-    border-radius: 50px;
-    background-image: linear-gradient(90deg, #3DBFA1, #2D939F, #1A629C);
-    color: #fff;
-    transition: all 0.5s ease;
+.ramadhan-countdown span {
+    font-weight: 700;
+    line-height: 17px;
 }
   
 /* Footer */
@@ -176,6 +176,7 @@ footer .footer-menu ul li a:hover {
     color: #fff;
     background-image: linear-gradient(90deg, #3DBFA1, #2D939F, #1A629C);
     border-radius: 50px;
+    font-weight: 700;
     transition: all 0.4s ease;
 }
 footer .copyright {
