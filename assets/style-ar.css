@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Generic Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MAIN SECTION */
+
+header {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 30px 5%;
+}
+
+.judul-situs {
+    float: left;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1A629C;
+}
+
+.judul-situs sup {
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 5px;
+    color: #2D939F;
+}
+
+.pilih-bahasa ul {
+    float: right;
+    font-family: 'Quicksand', sans-serif;
+    /* height: 80px; */
+    margin-right: -1.2rem;
+    font-weight: 500;
+    font-size: 17px;
+    color: #1A629C;
+}
+
+.pilih-bahasa ul li {
+    margin: 0 5px;
+}
+
+
+.pilih-bahasa ul li a {
+    color: #1A629C;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+.pilih-bahasa ul li a.active, .pilih-bahasa ul li a:hover {
+    background-color: rgba(61, 191, 161, 0.1);
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0 14% 0;
+    /* padding-bottom: 10rem; */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cairo', sans-serif;
+}
+
+.tanggal-hijriah {
+    padding-bottom: 20px;
+    color: #2D939F ;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.search-bar {
+    width: 750px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #1A629C;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.search-input {
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 17px;
+    color: #1A629C;
+    margin-right: -3rem;
+}
+
+::placeholder {
+    color: #1A629C;
+    font-family: 'Cairo', sans-serif;
+}
+
+.search-bar button {
+    cursor: pointer;
+}
+
+.search-bar button span {
+    width: 25px;
+}
+
+.search-bar .voice-search {
+    border: 0;
+    outline: none;
+    border-radius: 40px;
+    margin-right: 8px;
+    width: 62px;
+    height: 40px;
+    background-color: #3DBFA1;
+}
+
+.search-bar span {
+    color: #fff;
+}
+
+.search-bar .search-button {
+    border: 0;
+    outline: none;
+    /* margin-right: 55px; */
+    margin-right: -10px;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #1A629C;
+}
+
+.ramadhan-countdown {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #2D939F;
+}
+
+.ramadhan-countdown span {
+    font-weight: 700;
+    line-height: 17px;
+}
+  
+/* Footer */
+footer {
+    /* background-color: #1A629C; */
+    padding: 1rem 4rem;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+}
+
+footer .footer-menu {
+    float: left;
+}
+
+footer .footer-menu ul li {
+    padding: 0 0.5em;
+}
+
+footer .footer-menu ul li a {
+    color: #2D939F;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+footer .footer-menu ul li a:hover {
+    color: #fff;
+    background-image: linear-gradient(90deg, #3DBFA1, #2D939F, #1A629C);
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+footer .copyright {
+    float: right;
+    color: #1A629C;
+    font-weight: 600;
+}
+  /* margin-right: -3.2rem; */
+
+
+/* Responsive Breakpoint */ 
+@media screen and (max-width: 512px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .judul-situs, .judul-situs sup {
+        flex: 1;
+        order: 1;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .tanggal-hijriah {
+        flex: 1;
+        order: 2;
+        font-size: 17px;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 10% 0 14% 0;
+        /* padding-bottom: 10rem; */
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .apa-yang-baru {
+        padding-bottom: 15px;
+        color: #2D939F ;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .search-bar {
+        width: 450px;
+        height: 60px;
+        background-color: #fff;
+        border: 1px solid #1A629C;
+        display: flex;
+        align-items: center;
+        border-radius: 60px;
+        padding: 10px 20px;
+    }
+    /* Style untuk menu bahasa */
+    /* .pilih-bahasa {
+        display: inline-block;
+    } */
+    main .bahasa-penelusuran {
+        padding-top: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    main .bahasa-penelusuran a {
+        color: #1A629C;
+        padding: 1em ;
+        border-radius: 10px;
+    }
+    
+    main .bahasa-penelusuran a:hover {
+        border-radius: 50px;
+        background-image: linear-gradient(90deg, #3DBFA1, #2D939F, #1A629C);
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+      
+    /* Footer */
+    footer {
+        /* background-color: #1A629C; */
+        padding: 1rem 4rem;
+        font-weight: 500;
+    }
+    
+    footer .footer-menu {
+        float: left;
+    }
+    
+    footer .footer-menu ul li {
+        padding: 0 0.5em;
+    }
+    
+    footer .footer-menu ul li a {
+        color: #2D939F;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    footer .footer-menu ul li a:hover {
+        color: #fff;
+        background-image: linear-gradient(90deg, #3DBFA1, #2D939F, #1A629C);
+        border-radius: 50px;
+        transition: all 0.4s ease;
+    }
+    footer .copyright {
+        float: right;
+        color: #1A629C;
+        font-weight: 600;
+    }
+      /* margin-right: -3.2rem; */
+    
+}
